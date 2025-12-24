@@ -1,0 +1,25 @@
+server:
+  port: 8090
+  error:
+      include-binding-errors: ALWAYS
+      include-message: ALWAYS
+      include-stacktrace: ALWAYS
+      include-exception: true
+
+spring:
+  main:
+    banner-mode: off
+  web:
+    locale: en_US
+  application:
+    name: kern-server
+
+logbook:
+  exclude:
+    - /actuator/health/liveness
+    - /actuator/health/readiness
+
+logging:
+  level:
+    org.zalando.logbook: TRACE
+    org.jooq.tools.LoggerListener: DEBUG
