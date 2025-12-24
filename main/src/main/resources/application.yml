@@ -1,10 +1,10 @@
 server:
   port: 8090
   error:
-      include-binding-errors: ALWAYS
-      include-message: ALWAYS
-      include-stacktrace: ALWAYS
-      include-exception: true
+    include-binding-errors: ALWAYS
+    include-message: ALWAYS
+    include-stacktrace: ALWAYS
+    include-exception: true
 
 spring:
   main:
